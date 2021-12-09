@@ -1,6 +1,40 @@
-
+#slider {
+  margin-top: 0px;
+}
 
 #produto {
-  margin-top: 60px;
+  margin-top: 70px;
 }
+
+.card {
+  margin-top: 40px;
+  margin-right: 20px;
+}
+.carousel-caption {
+  background-color: black;
+
+
+}
+.data {
+  color: red;
+  font-size: 14px;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+
+}
+
+@media (max-width: 576px) {
+    
+  body {
+    background-color: rgb(238, 238, 238);
+  } 
+  .carousel-item {
+    margin-top: 50px;
+ }
+ 
+  
+}
+
 /*# sourceMappingURL=style.css.map */
