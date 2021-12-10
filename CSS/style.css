@@ -1,27 +1,35 @@
-#slider {
-  margin-top: 0px;
+#header {
+  width: 100%;
 }
 
 #evento {
   margin-top: 70px;
 }
-
-.card {
-  margin-top: 40px;
-  margin-right: 20px;
+.card{
+  margin-bottom: 40px;
 }
+  
+
 
 .data {
   color: red;
 }
 
+.carousel-item {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
+  padding-bottom: 10%;
 }
+  
+ 
+  
+
 
 footer {
-  width: 100%;
   height: 200px;
   background-color: black;
 }
@@ -38,15 +46,19 @@ footer .equipe img {
 }
 
 @media (max-width: 576px) {
-  body {
-    background-color: #d1dadd;
-  }
-  .carousel-item {
-    margin-top: 150px;
-  }
-  .carousel-item img {
+  footer {
     width: 100%;
-    height: vh;
+    height: 200px;
+    background-color: black;
+  }
+  footer .equipe {
+    color: blanchedalmond;
+    text-align: center;
+    padding-top: 50px;
+  }
+  footer .equipe img {
+    width: 40px;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
