@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #header {
   width: 100%;
 }
@@ -5,29 +11,80 @@
 #evento {
   margin-top: 70px;
 }
-.card{
-  margin-bottom: 40px;
-}
-  
 
+
+ .texto {
+ 
+  text-align: center;
+}
+
+.card {
+   margin-bottom: 40px;
+  
+}
+ .card-block h6, h5, .card-text  {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+   
+.card .btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+     
+}
+.overflow {
+  position: relative;
+  overflow: hidden;
+}
+.zoom img {
+  transition: all 0.2s linear;
+}
+.zoom:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 .data {
   color: red;
+  padding-top: 10px;
 }
 
 .carousel-item {
   background-color: rgba(0, 0, 0, 0.7);
+  
+  
+}
+
+.carousel-inner{
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
-  padding-bottom: 10%;
+  padding-bottom: 100px;
 }
-  
- 
-  
 
+.carousel-caption .texto {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn { 
+  text-align: center;
+  
+}
+
+.descricao{
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+}
+
+.subtitulo {
+  text-align: center;
+}
 
 footer {
   height: 200px;
@@ -35,29 +92,72 @@ footer {
 }
 
 footer .equipe {
-  color: blanchedalmond;
+  color: white;
   text-align: center;
   padding-top: 50px;
 }
 
 footer .equipe img {
-  width: 40px;
+  width: 60px;
   height: auto;
+  padding-right: 30px;
 }
 
-@media (max-width: 576px) {
+.copyright{
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+
+.embed-responsive-item{
+  width:100%;
+  min-height: 500px;
+  height:100%;
+}
+
+
+    .detalhes img {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+@media (max-width: 768px) {
+  
+  .detalhes img {
+    margin: auto;
+  }
+
+  .texto {
+    
+    text-align: center;
+    
+  }
+
+  .carousel-caption {
+    padding: 10px;
+    padding-bottom: 50px;
+     background-color: rgba(0, 0, 0, 0.7);
+  }
+  .carousel-caption h1 {
+       font-size: 20px;
+  }
+  .carousel-caption p {
+    font-size: 15px;
+  }
   footer {
     width: 100%;
-    height: 200px;
+    height: auto;
     background-color: black;
   }
-  footer .equipe {
+   footer .equipe {
     color: blanchedalmond;
     text-align: center;
     padding-top: 50px;
   }
-  footer .equipe img {
-    width: 40px;
+   footer .equipe img {
+    width: 60px;
     height: auto;
   }
 }
