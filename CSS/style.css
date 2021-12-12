@@ -1,163 +1,187 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#header {
-  width: 100%;
+.html {
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  scroll-behavior: smooth;
+}
+
+#header .navbar {
+  background-color: #ee4401;
+  color: #0a0909;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+#header .nav-link {
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+}
+
+#header .nav-link:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.detalhes {
+  background-color: black;
+}
+
+.detalhes img {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel-item .carousel-caption {
+  padding-bottom: 100px;
+}
+
+.carousel-item .texto {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+span {
+  color: red;
+}
+
+.card-header {
+  background-color: #343a40;
+}
+
+.texto-sobre {
+  text-align: center;
+  position: relative;
+  bottom: 300px;
+  margin: auto;
+  color: white;
 }
 
 #evento {
   margin-top: 70px;
 }
 
-
- .texto {
- 
-  text-align: center;
-}
-
 .card {
-   margin-bottom: 40px;
-  
-}
- .card-block h6, h5, .card-text  {
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: justify;
+  margin-bottom: 60px;
 }
 
-   
-.card .btn {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-     
-}
 .overflow {
   position: relative;
   overflow: hidden;
 }
+
 .zoom img {
+  -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+
 .zoom:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.data {
+.card-block .data {
   color: red;
   padding-top: 10px;
 }
 
-.carousel-item {
-  background-color: rgba(0, 0, 0, 0.7);
-  
-  
+.card-block h6, .card-block h5, .card-block p {
+  padding-left: 5px;
 }
 
-.carousel-inner{
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.carousel-caption {
-  padding: 20px;
-  padding-bottom: 100px;
-}
-
-.carousel-caption .texto {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.btn { 
-  text-align: center;
-  
-}
-
-.descricao{
-  padding-left: 10%;
-  padding-right: 10%;
+.det {
+  padding-left: 15%;
+  padding-right: 15%;
   text-align: justify;
 }
 
-.subtitulo {
-  text-align: center;
+h6, h3, h4 {
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 footer {
-  height: 200px;
-  background-color: black;
+  height: auto;
 }
 
-footer .equipe {
+.equipe {
   color: white;
   text-align: center;
   padding-top: 50px;
 }
 
-footer .equipe img {
-  width: 60px;
+.equipe img {
+  width: 50px;
   height: auto;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
-.copyright{
+.copyright {
   color: white;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
   text-align: center;
 }
 
-
-.embed-responsive-item{
-  width:100%;
-  min-height: 500px;
-  height:100%;
+#titulo {
+  padding-bottom: 40px;
+  text-align: center;
 }
 
+.btn {
+  background-color: red;
+  border: red;
+}
 
-    .detalhes img {
-      margin-left: 15%;
-      margin-right: 15%;
-    }
+.btn:hover {
+  background-color: #be0404;
+}
 
-@media (max-width: 768px) {
-  
-  .detalhes img {
-    margin: auto;
-  }
+.btn-link {
+  background-color: white;
+}
 
-  .texto {
-    
-    text-align: center;
-    
-  }
+.btn-link:hover {
+  background-color: white;
+}
 
+.todosEventos {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 576px) {
   .carousel-caption {
     padding: 10px;
     padding-bottom: 50px;
-     background-color: rgba(0, 0, 0, 0.7);
   }
   .carousel-caption h1 {
-       font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
   }
-  .carousel-caption p {
+  .carousel-caption h1 p {
+    background-color: rgba(0, 0, 0, 0.7);
     font-size: 15px;
   }
   footer {
     width: 100%;
-    height: auto;
+    height: 200px;
     background-color: black;
   }
-   footer .equipe {
+  footer .equipe {
     color: blanchedalmond;
     text-align: center;
     padding-top: 50px;
   }
-   footer .equipe img {
-    width: 60px;
+  footer .equipe img {
+    width: 40px;
     height: auto;
   }
 }
